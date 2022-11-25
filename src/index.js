@@ -8,6 +8,7 @@ import {
 import Home from "./components/home/Home";
 import Form from "./components/form/Form";
 import About from "./components/about/About";
+import Will from "./components/will/Will";
 // import "./index.css";
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/form",
     element: <Form />,
+  },
+  {
+    path: "/form/will",
+    element: <Will />,
   },
   {
     path: "/about",
