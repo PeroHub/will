@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/home/Home";
 import Form from "./components/form/Form";
+import About from "./components/about/About";
 // import "./index.css";
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/form",
     element: <Form />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 
