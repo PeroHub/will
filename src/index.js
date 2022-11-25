@@ -7,11 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/home/Home";
 import Form from "./components/form/Form";
-<<<<<<< HEAD
-import Will from "./components/will/Will";
-=======
 import About from "./components/about/About";
->>>>>>> 576b9a584f4be1f9a42287464a51e31f8fd55691
 // import "./index.css";
 
 const router = createBrowserRouter([
@@ -24,13 +20,8 @@ const router = createBrowserRouter([
     element: <Form />,
   },
   {
-<<<<<<< HEAD
-    path: "/form/will",
-    element: <Will />,
-=======
     path: "/about",
     element: <About />,
->>>>>>> 576b9a584f4be1f9a42287464a51e31f8fd55691
   },
 ]);
 
