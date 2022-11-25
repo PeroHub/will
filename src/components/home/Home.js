@@ -12,7 +12,7 @@ export default function Home() {
       <div className="will-container">
         <nav>
           <div className="nav-logo">
-            <img src={Free} className="will-logo" sx={{height: "30px"}} alt="logo" />
+            <img src={willLogo} className="will-logo" alt="logo" />
             <h1 className="logo-text">Perfectwill</h1>
           </div>
           <Link to={"/about"} id="about">
