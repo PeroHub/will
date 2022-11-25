@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.will-container{
+  margin:  0 auto;
+  height: 100vh;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav{
+  padding: 1.2rem 0;
+  background-color: #1976D2;
   color: white;
+  display: flex;
+  justify-content: space-around;
+}
+#about{
+  color: white !important;
+}
+.nav-logo{
+  display: flex;
+}
+.logo-text{
+  text-align: center;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.main{
+  display: flex;
+  margin: 4.5rem auto;
+  width: 100%;
+  padding: 5rem 5rem;
+  justify-content: space-around;
+}
+.main-text{
+  width: 50%;
+  margin: 4rem 0;
+}
+#title{
+  font-size: 3rem;
+  padding: 1.5rem 0;
+}
+#will-info{
+  font-size: 2rem;
+}
+.will-logo{
+  width: 2.5rem;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#form-btn{
+padding: 0.7rem 1rem;
+color: white;
+background-color: #1976D2;
+margin: 2rem 0;
+border: none;
+border-radius: 0.4rem;
+text-decoration: none;
+font-size: 1.2rem;
+}
+
+#about{
+  color:black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+#img{
+  width: 100%;
+}
+@media (max-width:480px){
+  .will-container{
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  nav{
+    width: 100%;
+  }
+  .main{
+    width: 80%;
+    display: flex;
+    margin: 0rem;
+    padding: 1rem;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-text{
+    margin: 1rem 0rem;
+    width: 100%;
+    padding: 0rem;
+  }
+  #title{
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+  #will-info{
+    padding: 1rem;
+  }
+  
+  #form-btn{
+    margin: 1rem 4rem;
+  }
+  #img-div{
+    margin: 0rem;
+    width: 100%;
+  }
+  #img{
+    width: 100%;
+  }
+} 
+@media (min-width:481px) and (max-width: 768px) {
+  .will-container{
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+  }
+  .main{
+    width: 80%;
+    display: flex;
+    margin: 0rem;
+    padding: 1rem;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-text{
+    margin: 1rem 0rem;
+    width: 100%;
+    padding: 0rem;
+  }
+  #title{
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: rgb(0, 166, 255);
+  }
+  #will-info{
+    padding: 1rem;
+  }
+  
+  #form-btn{
+    margin: 1rem 4rem;
+  }
+  #img-div{
+    margin: 0rem;
+    width: 100%;
+  }
+  #img{
+    width: 100%;
+  }
+} 
+@media (min-width: 768px) and (max-width: 1024px){
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .will-container{
+    margin:  0 auto;
+    height: 100vh;
+    width: 100%;
+  }
+  nav{
+    padding: 1.2rem 0;
+    background-color: #1976D2;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-logo{
+    display: flex;
+  }
+  .logo-text{
+    text-align: center;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .main{
+    display: flex;
+    margin: 4.5rem auto;
+    width: 100%;
+    padding: 5rem 5rem;
+    justify-content: space-around;
+  }
+  .main-text{
+    width: 50%;
+    margin: 4rem 0;
+  }
+  #title{
+    font-size: 3rem;
+    padding: 1.5rem 0;
+  }
+  #will-info{
+    font-size: 2rem;
+  }
+  .will-logo{
+    width: 2.5rem;
+    background-color: white;
+  }
+  
+  #form-btn{
+  padding: 0.3rem 1rem;
+  color: rgb(0, 166, 255);
+  margin: 2rem 0;
+  border: none;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  }
+  
+  #about{
+    color:black;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  #img{
+    width: 100%;
   }
 }
