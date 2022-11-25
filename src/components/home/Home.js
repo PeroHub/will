@@ -4,13 +4,15 @@ import homeImg from "../../components/home/homeImages/homeImg.jpeg";
 import { Link } from "react-router-dom";
 import "../../App.css";
 
+import Free from '../../free.png'
+
 export default function Home() {
   return (
     <div>
       <div className="will-container">
         <nav className="bg-red-400">
           <div className="nav-logo">
-            <img src={willLogo} className="will-logo" alt="logo" />
+            <img src={Free} className="will-logo" alt="logo" />
             <h1 className="logo-text">Perfectwill</h1>
           </div>
           <Link to={"/about"} id="about">
