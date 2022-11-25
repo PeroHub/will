@@ -164,19 +164,20 @@ export default function Form() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     
-    setTotal([...beneficiary, {
+    setTotal([{
       willFirstName: data.get('willFirstName'),
       willLasttName: data.get('willFirstName'),
       assest: data.get('asset'),
       executor: data.get('executor'),
       location: data.get('location')
-    }])
+    }, ...beneficiary ])
     
 
   };
   
-  localStorage.setItem("come", JSON.stringify(total))
   localStorage.setItem("beneficiaries", JSON.stringify(beneficiary))
+  
+  localStorage.setItem("come", JSON.stringify(total))
 
 
   return (

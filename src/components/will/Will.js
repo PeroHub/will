@@ -10,7 +10,7 @@ const [ data, setData] = useState([])
 const [ beneficiary, setBeneficiary] = useState([])
 
 
-console.log(data)
+console.log(data[0])
     useEffect(() => {
         setData(JSON.parse(localStorage.getItem("come")))
         setBeneficiary(JSON.parse(localStorage.getItem("beneficiaries")))
@@ -33,6 +33,8 @@ console.log(data)
     pdf.addImage(data, 'PNG', 0, 0, pdfWidth, pdfHeight);
     pdf.save('print.pdf');
   };
+
+//   data.map((item) => console.log(item))
     
 
     const last = data[data.length - 1]
@@ -47,13 +49,13 @@ console.log(data)
               Download as PDF
             </Button>
              {/* <button onClick={handleDownloadPdf}>Print</button> */}
-           
+
                 <Box  id="divToPrint" ref={printRef}>
 
-                    <h2> Last Will and Testament of {last.willFirstName} {last.willLasttName}</h2>
-                    <p>I, {last.willFirstName} {last.willLasttName}, of {last.location}, declare this to be my Will, and I revoke all Wills and Codicils previously made by me.</p>
+                    <h2> Last Will and Testament of {data[0]?.willFirstName} {data[0]?.willLasttName}</h2>
+                    <p>I, {data[0]?.willFirstName} {data[0]?.willLasttName}, of {data[0]?.location}, declare this to be my Will, and I revoke all Wills and Codicils previously made by me.</p>
                     <h2>Article I: Declarations</h2>
-                    <p>A. Executor - I nominate my sibling {last.executor} to serve as Executor of my estate and to carry out the instructions in this Will</p>
+                    <p>A. Executor - I nominate my sibling {data[0]?.executor} to serve as Executor of my estate and to carry out the instructions in this Will</p>
                     <p>
                         B. Bond & Court Supervision - No bond or other security shall be required of my Executor or Digital Executor in any jurisdiction. To the extent permitted by the laws of the state in which my Will is probated, my Executor shall have the authority to administer my estate without court supervision, and no action shall be required in any court in relation to the settlement of my estate other than the probating and recording of my Will. 
                     </p>
