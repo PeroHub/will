@@ -34,7 +34,7 @@ export default function Home() {
             </div>
           </div>
           <div id="img-div">
-            <img src={homeImg} id="img" alt="home-image" />
+            <img src={homeImg} id="img" alt="homeImg" />
           </div>
         </div>
       </div>

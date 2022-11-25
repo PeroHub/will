@@ -23,10 +23,12 @@ nav{
   border: 1px solid red;
   position: relative;
   right: 30px;
+  border: none;
 }
 .logo-text{
   text-align: center;
   margin-left: 0.5rem;
+  margin-top: 0.6rem;
   font-size: 1.5rem;
 }
 
@@ -34,7 +36,7 @@ nav{
   display: flex;
   margin: 4.5rem auto;
   width: 100%;
-  padding: 5rem 5rem;
+  padding: 5rem 11rem;
   justify-content: space-around;
 }
 .main-text{
