@@ -3,118 +3,138 @@
   margin: 0;
   box-sizing: border-box;
 }
-.will-container{
-  margin:  0 auto;
-  height: 100vh;
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.hp-will-container{
   width: 100%;
 }
-nav{
-  padding: 1.2rem 0;
+.hp-nav{
   background-color: #1976D2;
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 20px 280px;
+  padding: 1rem 9rem;
+}
+.ab-about-page{
+  width: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  background-color: pink;
+}
+.hp-main{
+  padding: 1rem;
 }
 
-@media (max-width: 600px) {
-  nav {
-  padding: 20px 50px;
 
-  }
-}
-#about{
-  color: white !important;
-}
-.nav-logo{
+.hp-nav-logo{
   display: flex;
-  border: 1px solid red;
   position: relative;
   right: 30px;
   border: none;
 }
-.logo-text{
+.hp-logo-text{
   text-align: center;
   margin-left: 0.5rem;
   margin-top: 0.6rem;
   font-size: 1.5rem;
 }
 
-.main{
+.hp-main{
   display: flex;
-  margin: 4.5rem auto;
+  margin: 0rem auto;
   width: 100%;
-  padding: 5rem 11rem;
+  padding: 5rem 4rem;
   justify-content: space-around;
 }
-.main-text{
+.hp-main-text{
   width: 50%;
   margin: 4rem 0;
 }
-#title{
+#hp-title{
   font-size: 3rem;
   padding: 1.5rem 0;
 }
-#will-info{
-  font-size: 2rem;
+#hp-will-info{
+  font-size: 1rem;
   padding: 1.5rem 0;
 }
-.will-logo{
+.hp-will-logo{
   width: 2.5rem;
-  /* background-color: white; */
 }
 
-#form-btn{
+#hp-form-btn{
 padding: 0.7rem 1rem;
 color: white;
 background-color: #1976D2;
-margin: 2rem 0;
+margin: 1rem 0;
+cursor: pointer;
 border: none;
 border-radius: 0.4rem;
 text-decoration: none;
 font-size: 1.2rem;
 }
 
-#about{
-  color:black;
-  font-size: 2rem;
+#ab-about{
+  color:white;
+  font-size: 1.5rem;
   text-decoration: none;
+  cursor: pointer;
 }
-#img{
+#hp-img{
   width: 100%;
 }
-.about-page{
+.ab-about-page{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   height: 100vh;
   width: 100%;
   margin: 0 auto;
   padding: 5rem;
   text-align: center;
 }
-#about-title{
+.ab-about-div{
+  width: 100%;
+}
+.hp-main-text{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+}
+#ab-about-title{
   width: 70%;
-  font-size: 3rem;
+  font-size: 2.3rem;
   padding: 2rem;
   text-align: center;
 }
-.about-page,p{
-  width: 70%;
+.ab-text{
+  width: 100%;
   padding: 1rem;
   font-size: 1.2rem;
   /* text-align: center; */
 }
-@media (max-width:480px){
-  .will-container{
+  @media (max-width:480px){
+  .hp-will-container{
     width: 100%;
   }
-  nav{
-    width: 100%;
+  .hp-nav{
+    padding: 2rem 2rem;
+    align-items: center;
   }
-  .main{
-    width: 80%;
+    .hp-nav-logo{
+    padding: 1rem;
+    align-items: center;
+    width: 100%;
+    display: column;
+  }
+  .hp-logo-text{
+    margin-top: 0;
+  }
+  .hp-main{
+    width: 100%;
     display: flex;
     margin: 0rem;
     padding: 1rem;
@@ -122,7 +142,7 @@ font-size: 1.2rem;
     flex-direction: column;
     align-items: center;
   }
-  .about-page{
+  .ab-about-page{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,53 +153,55 @@ font-size: 1.2rem;
     padding: 1rem;
     text-align: center;
   }
-  #about-title{
+  #ab-about-title{
     width: 100%;
     font-size: 3rem;
     padding: 2rem;
     text-align: center;
   }
-  .about-page,p{
+  .ab-about-page,p{
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
-    /* text-align: center; */
+     text-align: center; 
   }
-  .main-text{
+  .hp-main-text{
     margin: 1rem 0rem;
     width: 100%;
     padding: 0rem;
   }
-  #title{
+  #hp-title{
     text-align: center;
     width: 100%;
     padding: 1rem 0;
     font-size: 1.5rem;
   }
-  #will-info{
+  #hp-will-info{
     padding: 1rem;
   }
-  
-  #form-btn{
+  .hp-link-div{
+    margin: 0 auto;
+  }
+  #hp-form-btn{
     margin: 1rem 4rem;
   }
-  #img-div{
+  #hp-img-div{
     margin: 0rem;
     width: 100%;
   }
-  #img{
+  #hp-img{
     width: 100%;
   }
-} 
+}   
 @media (min-width:481px) and (max-width: 768px) {
-  .will-container{
+  .hp-will-container{
     width: 100%;
   }
-  nav{
+  .hp-nav{
     width: 100%;
   }
-  .main{
-    width: 80%;
+  .hp-main{
+    width: 100%;
     display: flex;
     margin: 0rem;
     padding: 1rem;
@@ -187,53 +209,52 @@ font-size: 1.2rem;
     flex-direction: column;
     align-items: center;
   }
-  .about-page{
+  .ab-about-page{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     width: 100%;
     margin: 0 auto;
     /* padding: 1rem; */
     text-align: center;
   }
-  #about-title{
+  #ab-about-title{
     width: 100%;
     font-size: 3rem;
     padding: 1rem;
     text-align: center;
   }
-  .about-page,p{
+  .ab-about-page,p{
     width: 100%;
     /* padding: 1rem; */
     font-size: 1rem;
     text-align: center;
   }
-  .main-text{
+  .hp-main-text{
     margin: 1rem 0rem;
     width: 100%;
     padding: 0rem;
   }
-  #title{
+  #hp-title{
     text-align: center;
     width: 100%;
     padding: 1rem 0;
     font-size: 1.5rem;
     color: rgb(0, 166, 255);
   }
-  #will-info{
+  #hp-will-info{
     padding: 1rem;
   }
   
-  #form-btn{
+  #hp-form-btn{
     margin: 1rem 4rem;
   }
-  #img-div{
+  #hp-img-div{
     margin: 0rem;
     width: 100%;
   }
-  #img{
+  #hp-img{
     width: 100%;
   }
 } 
