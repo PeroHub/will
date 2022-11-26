@@ -8,7 +8,7 @@ import Free from '../../free.png'
 
 export default function Home() {
   return (
-    <div>
+     <div>
       <div className="hp-will-container">
      <Navbar />
         <div className="hp-main">
