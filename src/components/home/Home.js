@@ -21,7 +21,7 @@ export default function Home() {
             <div className="hp-link-div">
               {" "}
               <Link to={"/form"}>
-                <button id="hp-form-btn">Generate will</button>
+                <button id="hp-form-btn">GenerateWill</button>
               </Link>
             </div>
           </div>
