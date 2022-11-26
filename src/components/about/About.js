@@ -9,7 +9,7 @@ const About = () => {
         <h1 id="ab-about-title">What we do</h1>
         {/* <div> */}
           <div className="ab-text-wrapper">
-            <div>
+            <div className="ab-text-box">
               <p className="ab-text">
                 Perfectwill is a team that offers guidance and directives to
                 testators on how to write their last will and testament
@@ -18,7 +18,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="ab-text-box">
             <p className="ab-text">
               We add value by making sure the will is clearly drafted in
               accordance with the testator's wishes, and that your will is
@@ -26,7 +26,7 @@ const About = () => {
               valid and reduce the risk of a successful challenge.
             </p>
           </div>
-          <div>
+          <div className="ab-text-box">
             <p className="ab-text">
               We make it possible and easy for you to appoint someone to manage
               your financial affairs if you become incapacitated or otherwise
